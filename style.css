@@ -39,11 +39,12 @@ button:active {
 }
 .pagination ul {
   display: flex;
+  justify-content: center;
 }
 .pagination li {
   list-style-type: none;
   color: white;
-  margin-inline: 0.8rem;
+  margin-inline: 4px;
   padding: 0.1rem 0.4rem;
   background: #f50000;
   border-radius: 5px;
@@ -64,4 +65,17 @@ button:active {
   margin: 1rem;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   padding: 1rem;
+}
+@media screen and (max-width: 990px) {
+  ul.pages {
+    display: none;
+  }
+  .pagination {
+    justify-content: space-evenly;
+    width: 50%;
+  }
+  button {
+    padding: 1.2rem 2rem;
+    font-size: large;
+  }
 }
