@@ -25,38 +25,21 @@ header {
   margin-top: 3rem;
 }
 button {
+  margin-inline: 0.2rem;
   padding: 0.5rem 0.8rem;
   border: none;
   color: white;
   border-radius: 5px;
   font-weight: 600;
-  background-color: #0d6efd;
+  background-color: #a5a5a5;
   cursor: pointer;
+}
+#currentPage {
+  background-color: #0d6efd;
 }
 
 button:active {
   box-shadow: 0 0 5px #0d6efd;
-}
-.pagination ul {
-  display: flex;
-  justify-content: center;
-}
-.pagination li {
-  list-style-type: none;
-  color: white;
-  margin-inline: 4px;
-  padding: 0.1rem 0.4rem;
-  background: #f50000;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.pagination li:hover {
-  background-color: #ff6767;
-}
-.pagination li.active {
-  background-color: #0d6efd;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .list-group li {
@@ -66,16 +49,6 @@ button:active {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   padding: 1rem;
 }
-@media screen and (max-width: 990px) {
-  ul.pages {
-    display: none;
-  }
-  .pagination {
-    justify-content: space-evenly;
-    width: 50%;
-  }
-  button {
-    padding: 1.2rem 2rem;
-    font-size: large;
-  }
+.none {
+  display: none;
 }
